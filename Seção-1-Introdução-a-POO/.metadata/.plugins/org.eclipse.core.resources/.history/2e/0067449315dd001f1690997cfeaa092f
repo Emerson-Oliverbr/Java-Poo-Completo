@@ -1,0 +1,18 @@
+package Application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double xA, xB, xC, yA, yB, yC;
+		
+		System.out.println("Insira as medias do triangulo x: ");
+		xA = sc.nextDouble;
+		
+		sc.close();
+	}
+
+}

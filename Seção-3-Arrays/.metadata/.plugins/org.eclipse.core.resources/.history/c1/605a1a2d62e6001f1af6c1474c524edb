@@ -1,0 +1,19 @@
+package entities;
+
+public class Produto {
+	private String nome;
+	private double preco;
+	
+	public Produto(String nome, double preco) {
+		nome = nome;
+		preco = preco;
+	}
+	
+	public double getPreco() {
+		return preco;
+	}
+	
+	public void setPreco() {
+		this.preco = preco;
+	}
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+/home/emerson/DevJava/Java-POO/Seção-2-Construtores-Palavra-this-Sobrecarga-Encapsulamento/.metadata/.plugins/org.eclipse.jdt.core
+1791329824.index
+2053992413.index
+1865797976.index
+1916310294.index
+2653017677.index
+1084130924.index

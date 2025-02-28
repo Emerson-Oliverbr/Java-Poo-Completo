@@ -1,0 +1,58 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.ContaBancaria;
+
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		ContaBancaria conta;
+		ContaBancaria conta2;
+		
+		System.out.print("Digite o numero da conta: ");
+		int number = sc.nextInt();
+		System.out.print("Digite o titular da conta: ");
+		sc.nextLine();
+		String holder = sc.nextLine();
+		System.out.print("A conta tera deposito ininial, (s/n)? ");
+		char resp = sc.next().charAt(0);		
+		
+		double initialDeposit = 0.0;
+		if(resp == 's') {
+			System.out.print("Informe o valor do deposito inicial: ");
+			initialDeposit = sc.nextDouble();
+		}
+		
+		conta = new ContaBancaria(number, holder, initialDeposit);
+		System.out.println();
+		System.out.println("Dados da Conta: " + conta);
+		System.out.println();
+		System.out.print("Insira um valor de depósito: ");
+		double valorDeposit = sc.nextDouble();
+		conta.deposit(valorDeposit);
+		System.out.println("Dados da conta atualizados: " + conta);
+		System.out.println();
+		System.out.print("Insira um valor de retirada: ");
+		double AmountWithdrawn = sc.nextDouble();
+		conta.withdraw(AmountWithdrawn);
+		System.out.println("Dados da conta atualizados: " + conta);
+		System.out.println();
+		
+		else {
+			
+			conta = new ContaBancaria(number, holder);			
+			System.out.println("Digite o numero da conta: ");
+			number = sc.nextInt(); 
+		}
+		
+		sc.close();
+	}
+
+}

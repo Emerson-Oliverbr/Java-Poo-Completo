@@ -1,0 +1,23 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o numero da conta: ");
+		double number = sc.nextDouble();
+		System.out.print("Digite o titular da conta: ");
+		String holder = sc.nextLine();
+		System.out.print("A conta tera deposito ininial, (s/n)?");
+		double initialDeposit = sc.nextDouble();
+		
+		
+		sc.close();
+	}
+
+}

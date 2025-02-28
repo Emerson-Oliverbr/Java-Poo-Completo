@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+/home/emerson/DevJava/Java-POO/Seção-3-Arrays/.metadata/.plugins/org.eclipse.jdt.core
+377779377.index
+2588543329.index
+1336701550.index
+919390806.index
+4234133608.index
+1865797976.index
+890366149.index
